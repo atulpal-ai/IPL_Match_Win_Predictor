@@ -8,21 +8,33 @@ pipe = pickle.load(open('pipe.pkl', 'rb'))
 st.title("🏏 IPL Win Predictor")
 
 # dropdown inputs
-batting_team = st.selectbox("Batting Team", [
-    'Chennai Super Kings','Delhi Capitals','Kings XI Punjab',
-    'Kolkata Knight Riders','Mumbai Indians','Rajasthan Royals',
-    'Royal Challengers Bangalore','Sunrisers Hyderabad'
-])
+teams = [
+    'Sunrisers Hyderabad',
+    'Mumbai Indians',
+    'Royal Challengers Bangalore',
+    'Kolkata Knight Riders',
+    'Punjab Kings',
+    'Chennai Super Kings',
+    'Rajasthan Royals',
+    'Delhi Capitals',
+    'Gujarat Titans',
+    'Lucknow Super Giants'
+]
 
-bowling_team = st.selectbox("Bowling Team", [
-    'Chennai Super Kings','Delhi Capitals','Kings XI Punjab',
-    'Kolkata Knight Riders','Mumbai Indians','Rajasthan Royals',
-    'Royal Challengers Bangalore','Sunrisers Hyderabad'
-])
+batting_team = st.selectbox("Batting Team", teams)
+bowling_team = st.selectbox("Bowling Team", teams)
 
-city = st.selectbox("City", [
-    'Mumbai','Delhi','Kolkata','Chennai','Bangalore','Hyderabad'
-])
+cities = [
+    'Bangalore','Bengaluru','Mumbai','Delhi','Kolkata','Chennai','Hyderabad',
+    'Jaipur','Ahmedabad','Lucknow','Pune','Mohali','Chandigarh',
+    'Dharamsala','Indore','Nagpur','Ranchi','Raipur','Cuttack',
+    'Visakhapatnam','Navi Mumbai','Guwahati',
+    'Dubai','Abu Dhabi','Sharjah',
+    'Cape Town','Port Elizabeth','Durban','Centurion',
+    'East London','Johannesburg','Kimberley','Bloemfontein'
+]
+
+city = st.selectbox("City", cities)
 
 # numeric inputs
 runs_left = st.number_input("Runs Left")
