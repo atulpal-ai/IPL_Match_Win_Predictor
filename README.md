@@ -1,58 +1,58 @@
-# 🏏 IPL Win Probability Predictor
+# 🏏 IPL Cricket Win Predictor
 
-A Machine Learning based web application that predicts the winning probability of IPL teams in real-time during a match.
-
----
-
-## 🚀 Features
-
-* Predicts win probability of batting and bowling team
-* Real-time match situation analysis
-* User-friendly interface using Streamlit
-* Takes input like score, overs, wickets, and target
+A Machine Learning project that predicts the **winning probability of an IPL match** based on real-time match conditions like runs, wickets, balls left, and teams.
 
 ---
 
-## 🧠 Machine Learning Model
+## 🚀 Live Demo
 
-* Algorithm Used: Logistic Regression
-* Libraries: scikit-learn, Pandas, NumPy
-* Model trained on historical IPL match data
+👉 https://ipl-cricket-win-predictor.streamlit.app
 
 ---
 
-## 📊 Input Parameters
+## 📌 Features
 
-* Batting Team
-* Bowling Team
-* Match City
-* Target Score
-* Current Score
-* Overs Completed
-* Wickets Fallen
+* Predict win probability in real-time
+* Interactive web app using Streamlit
+* Supports all IPL teams including Gujarat Titans & Lucknow Super Giants
+* Clean and simple UI
 
 ---
 
-## ⚙️ Tech Stack
+## 🧠 Tech Stack
 
 * Python
+* Pandas, NumPy
+* Scikit-learn
 * Streamlit
-* Pandas
-* NumPy
-* scikit-learn
 
 ---
 
-## 📂 Project Structure
+## 📊 Model Details
 
-* `app.py` → Main Streamlit application
-* `pipe.pkl` → Trained ML model
-* `requirements.txt` → Required libraries
-* `setup.sh` → Deployment configuration
+* Algorithm: Logistic Regression
+* Accuracy: ~80%
+* Feature Engineering:
+
+  * Current Run Rate (CRR)
+  * Required Run Rate (RRR)
+  * Runs left, balls left, wickets
 
 ---
 
-## ▶️ How to Run Locally
+## 📁 Project Structure
+
+```
+ipl-cricket-win-predictor/
+│── app.py
+│── pipe.pkl
+│── requirements.txt
+│── ipl_win_predictor.ipynb
+```
+
+---
+
+## ⚙️ How to Run Locally
 
 ```bash
 pip install -r requirements.txt
@@ -61,37 +61,17 @@ streamlit run app.py
 
 ---
 
-## 🌐 Deployment
-
-This project can be deployed using platforms like:
-
-* Streamlit Cloud
-* Heroku
+## 📸 Screenshot
+![App Screenshot](screenshot.png)
 
 ---
 
-## 📈 Output
-
-* Displays win probability (%) for both teams
-* Helps analyze match outcomes dynamically
-
----
-
-## 🔄 Future Improvements
-
-* Add more advanced ML models (Random Forest, XGBoost)
-* Improve accuracy using more features
-* Add live match data integration
-
----
-
-## 👨‍💻 Author
+## 🙌 Author
 
 **Atul Pal**
-Aspiring AI/ML Engineer
 
 ---
 
-## ⭐ Note
+## ⭐ If you like this project
 
-This project is continuously improved and updated on GitHub.
+Give it a star ⭐ on GitHub!
